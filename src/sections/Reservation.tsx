@@ -1,6 +1,7 @@
 import { useState, type FormEvent } from "react";
 import { CheckCircle2, Clock, Mail, MapPin, Phone } from "lucide-react";
 import { openingHours } from "../lib/content";
+import { trackEvent } from "../lib/analytics";
 import Reveal from "../components/Reveal";
 import SectionHeading from "../components/SectionHeading";
 
@@ -48,6 +49,7 @@ export default function Reservation() {
     e.preventDefault();
     if (!validate()) return;
     // Демо форма — тук би стоял реален API/имейл интеграция.
+    trackEvent("reservation_submit", { guests: form.guests });
     setSubmitted(true);
   };
 
