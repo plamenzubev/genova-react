@@ -1,45 +1,45 @@
 # Osteria Nova — React landing page
 
-Портфолио проект: съвременен, изцяло responsive landing page за фиктивен италиански ресторант, изграден с React, TypeScript и Tailwind CSS.
+Portfolio project: a modern, fully responsive landing page for a fictional Italian restaurant, built with React, TypeScript and Tailwind CSS.
 
-**[Разгледай демо →](#)** _(линк ще се добави след деплой)_
+**[Live demo →](https://genova-react.vercel.app/)**
 
-## Какво демонстрира проектът
+## What this project demonstrates
 
-- Изграждане на маркетингов уебсайт от нулата по секции (Hero, За нас, Меню, Галерия, Отзиви, Резервация, Footer)
-- Responsive и cross-browser съвместим дизайн (мобилно/таблет/десктоп)
-- Интерактивна форма за резервация с валидация на клиента и success state
-- Табове за филтриране на менюто по категории
-- Плавни scroll анимации (Framer Motion)
-- Семантичен, достъпен HTML (alt текстове, aria-labels, коректна йерархия на заглавията)
-- Оптимизация за производителност — lazy loading на изображения, минимален bundle
+- Building a marketing website from scratch, section by section (Hero, About, Menu, Gallery, Testimonials, Reservation, Footer)
+- Responsive, cross-browser layout (mobile / tablet / desktop)
+- An interactive reservation form with client-side validation and a success state
+- Category tabs for filtering the menu
+- Smooth scroll animations (Framer Motion)
+- Semantic, accessible HTML (alt text, aria-labels, correct heading hierarchy)
+- Performance-conscious build — lazy-loaded images, lean bundle size
 
-## Технологии
+## Tech stack
 
 - [React 19](https://react.dev/) + [TypeScript](https://www.typescriptlang.org/)
 - [Vite](https://vite.dev/) — build tool
-- [Tailwind CSS v4](https://tailwindcss.com/) — стилизиране
-- [Framer Motion](https://motion.dev/) — анимации
-- [Lucide React](https://lucide.dev/) — икони
+- [Tailwind CSS v4](https://tailwindcss.com/) — styling
+- [Framer Motion](https://motion.dev/) — animations
+- [Lucide React](https://lucide.dev/) — icons
 
-## Локално стартиране
+## Run locally
 
 ```bash
 npm install
 npm run dev
 ```
 
-## Build за production
+## Production build
 
 ```bash
 npm run build
 npm run preview
 ```
 
-## Бележка
+## Note
 
-Формата за резервация е фронтенд демонстрация (валидация + success state), без реален backend/имейл интеграция — типично за портфолио проект. При реален клиентски сайт би се свързала с API, имейл услуга (напр. Resend/SendGrid) или CRM.
+The reservation form is a front-end demo (validation + success state), with no real backend/email integration — typical for a portfolio piece. On a real client site it would connect to an API, an email service (e.g. Resend/SendGrid), or a CRM.
 
 ---
 
-Дизайн и разработка: [Пламен Зубев](https://github.com/plamenzubev)
+Design & development: [Plamen Zubev](https://github.com/plamenzubev)
