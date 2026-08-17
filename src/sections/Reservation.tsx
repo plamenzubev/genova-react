@@ -231,7 +231,7 @@ function Field({
   children: React.ReactNode;
 }) {
   return (
-    <label className={`block ${full ? "sm:col-span-2" : ""}`}>
+    <label className={`block min-w-0 ${full ? "sm:col-span-2" : ""}`}>
       <span className="mb-1.5 block text-sm font-medium text-cream/80">{label}</span>
       {children}
       {error && <span className="mt-1 block text-xs text-terracotta">{error}</span>}
@@ -240,7 +240,7 @@ function Field({
 }
 
 function inputClass(hasError: boolean) {
-  return `w-full rounded-xl border bg-espresso-2 px-4 py-2.5 text-sm text-cream placeholder:text-cream/30 outline-none transition focus:border-gold ${
+  return `w-full min-w-0 rounded-xl border bg-espresso-2 px-4 py-2.5 text-sm text-cream placeholder:text-cream/30 outline-none transition focus:border-gold ${
     hasError ? "border-terracotta" : "border-cream/15"
   }`;
 }
